@@ -1,0 +1,105 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'opensans';
+    src: url('font/Open_Sans/OpenSans-VariableFont_wdth_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'rileway';
+    src: url('font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+:root{
+    --escuro: #5c1d16;
+    --menosescuro: #e74c3c;
+    --neutro: #ecf0f1;
+    --claro: #3498d8;
+    --maisclaro: #ce4535;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--neutro);
+    font-family: 'opensans', Helvetica, sans-serif;
+}
+header{
+    background-color: #fff;
+    height: 33vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    box-shadow: 0px 3px 2px #8d8d8dc4;
+}
+.h2maior{
+    line-height: 70%;
+}
+.h2menor{
+    font-size: 0.4em;
+    font-weight: 300;
+}
+.content{
+    justify-content: space-evenly;
+    align-items: center;
+    height: 61vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer{
+    background-color: var(--escuro);
+    color: var(--neutro);
+    align-items: center;
+    align-self: end;
+    justify-content: center;
+    height: 6vh;
+}
+header,.content,.bem_vindo, .aulas, footer{
+    display: flex;
+}
+header, footer{
+    width: 100%;
+}
+.texto, .linkvi{
+    width: 80vw;
+    max-width: 600px;
+    text-align: justify;
+}
+.linkvi{
+    color: #000;
+    text-decoration: none; 
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+.casa{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+@media (min-width: 992px){
+    header{
+        background-image: url('../images/PC_fundo.jpg');
+        background-size: cover;
+        height: 100vh;
+        align-items: flex-start;
+        justify-content: left;
+        padding-top: 20vh;
+        padding-left: 14vw;
+        font-size: 4rem;
+    }
+    .h2maior{
+        background-color: var(--maisclaro);
+        height: 20rem;
+        width: 33rem;
+        padding-top: 3rem;
+        border-radius: 14px;
+        padding-left: 1.2rem;
+        text-align: left;
+        color: #fff;
+        box-shadow: 1px 5px 6px #0000006b;
+    }
+}
