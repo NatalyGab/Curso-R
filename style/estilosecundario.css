@@ -8,11 +8,11 @@
     src: url('font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
 }
 :root{
-    --escuro: #5c1d16;
-    --menosescuro: #e74c3c;
+    --escuro: #492275;
+    --menosescuro: #5d4b7e;
     --neutro: #ecf0f1;
-    --claro: #3498d8;
-    --maisclaro: #ce4535;
+    --claro: #703ac9;
+    --maisclaro: #8f3dd1;
 }
 *{
     margin: 0px;
@@ -63,6 +63,7 @@ header, footer{
     width: 80vw;
     max-width: 600px;
     text-align: justify;
+    text-align-last: center;
 }
 .linkvi{
     color: #000;
@@ -70,6 +71,11 @@ header, footer{
     text-align: center;
     font-size: 1.1rem;
     font-weight: bolder;
+}
+.linkvi2{
+    color: #000;
+    font-weight: bolder;
+    text-decoration: none;
 }
 .casa{
     text-decoration: none;
@@ -82,7 +88,7 @@ header, footer{
 
 @media (min-width: 992px){
     header{
-        background-image: url('../images/PC_fundo.jpg');
+        background-image: url('../images/PC_fundo.png');
         background-size: cover;
         height: 100vh;
         align-items: flex-start;

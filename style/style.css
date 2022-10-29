@@ -8,19 +8,19 @@
     src: url('font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
 }
 :root{
+    --escuro: #492275;
+    --menosescuro: #5d4b7e;
+    --neutro: #ecf0f1;
+    --claro: #703ac9;
+    --maisclaro: #8f3dd1;
+    /*
+    modelo anterior de cores
+    
     --escuro: #5c1d16;
     --menosescuro: #e74c3c;
     --neutro: #ecf0f1;
     --claro: #3498d8;
-    --maisclaro: #ce4535;
-    /*
-    modelo anterior de cores
-    
-    --escuro: #2c3e50;
-    --menosescuro: #2980b9;
-    --neutro: #ecf0f1;
-    --claro: #3498d8;
-    --maisclaro: #e74c3c;*/
+    --maisclaro: #ce4535;*/
 }
 *{
     margin: 0px;
@@ -194,7 +194,7 @@ img,.imagis,#modulos,.aulas, footer,.linkaulas{
 }
 @media (min-width: 992px) {
     header{
-        background-image: url('../images/PC_fundo.jpg');
+        background-image: url('../images/PC_fundo.png');
         background-size: cover;
         height: 100vh;
         align-items: flex-start;
